@@ -41,6 +41,10 @@
                   <label id="pass2" class="form-label" for="form3Example4cdg">Repeat your password</label>
                 </div>
 
+                <div class="form-outline me-3">
+                  <label id="mError" class="form-label"></label>
+                </div>
+
                 <div class="form-check d-flex justify-content-center mb-5">
                   <input
                     class="form-check-input me-2"
