@@ -1,18 +1,17 @@
 <?php
 // in_array
-$dbUser= array(
-    array("email" => "erickayalrias@gmail.com", "password" => "123456"),
-    array("email" => "roger@gmail.com", "password" => "12345678"),
-    array("email" => "pepe@gmail.com", "password" => "cochepepe"),
-);
+$file="./json/users.json";
+$Allusers= file_get_contents($file);
+$usersAll= json_decode($Allusers);
 
 if (($_POST)){
     $postEmail= $_POST["email"];
     $postPassword= $_POST["password"];
     header(("Location:../index.php?InvalidPassword"));
-    foreach ($dbUser as $user) {
-        if($postEmail == $user["email"]){
-            if($postPassword == $user["password"]){
+    foreach ($usersAll as $user ) {
+        print_r($user->name);
+        if($postEmail == $user->email){
+            if($postPassword == $user->password){
                 session_start();
                 $_SESSION["email"]= $postEmail;
                 $_SESSION["password"]=$postPassword;

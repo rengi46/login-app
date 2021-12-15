@@ -11,5 +11,5 @@ if(isset($_POST)){
     array_push($usersAll , $arr_clients);
     $jsonUsers= json_encode($usersAll);
     file_put_contents($file, $jsonUsers);
-
+    header(("Location:../index.php"));
 }
