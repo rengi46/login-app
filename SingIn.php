@@ -19,21 +19,21 @@
             <div class="card-body p-5">
               <h2 class="text-uppercase text-center mb-5">Create an account</h2>
 
-              <form action="./Assets/register.php">
+              <form action="./Assets/register.php" method="post">
 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
-                  <label name="name" class="form-label" for="form3Example1cg">Your Name</label>
+                  <input type="text" name="name" id="form3Example1cg" class="form-control form-control-lg" />
+                  <label  class="form-label" for="form3Example1cg">Your Name</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
-                  <label name="email" class="form-label" for="form3Example3cg">Your Email</label>
+                  <input type="email" name="email" id="form3Example3cg" class="form-control form-control-lg" />
+                  <label class="form-label" for="form3Example3cg">Your Email</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
-                  <label id="pass1" name="password" class="form-label" for="form3Example4cg">Password</label>
+                  <input type="password" name="password" id="form3Example4cg" class="form-control form-control-lg" />
+                  <label id="pass1"  class="form-label" for="form3Example4cg">Password</label>
                 </div>
 
                 <div class="form-outline mb-4">
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="d-flex justify-content-center">
-                  <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                  <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="./index.php" class="fw-bold text-body"><u>Login here</u></a></p>
