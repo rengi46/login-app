@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="./Assets/js/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -32,12 +33,12 @@
 
                 <div class="form-outline mb-4">
                   <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
-                  <label name="password" class="form-label" for="form3Example4cg">Password</label>
+                  <label id="pass1" name="password" class="form-label" for="form3Example4cg">Password</label>
                 </div>
 
                 <div class="form-outline mb-4">
                   <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                  <label id="pass2" class="form-label" for="form3Example4cdg">Repeat your password</label>
                 </div>
 
                 <div class="form-check d-flex justify-content-center mb-5">
